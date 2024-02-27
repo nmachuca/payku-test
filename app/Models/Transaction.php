@@ -18,5 +18,17 @@ class Transaction extends Model
         'amount',
         'payment_method_id'
     ];
+
+
+    /**
+     * The attributes that should be hidden for serialization.
+     *
+     * @var array
+     */
+    protected $hidden = [
+        'updated_at',
+        'created_at',
+        'payment_method_id'
+    ];
 }
 
